@@ -115,5 +115,19 @@
     
 })(jQuery);
 
+function playAudio(button) {
+    var audio = document.getElementById('audioPlayer');
+    var playIcons = document.querySelectorAll('.play-icon'); // Todos los iconos de reproducir
+    var pauseIcons = document.querySelectorAll('.pause-icon'); // Todos los iconos de pausar
 
+    if (audio.paused) {
+        audio.play();
+        playIcons.forEach(icon => icon.style.display = 'none'); // Ocultar todos los iconos de reproducir
+        pauseIcons.forEach(icon => icon.style.display = 'block'); // Mostrar todos los iconos de pausar
+    } else {
+        audio.pause();
+        playIcons.forEach(icon => icon.style.display = 'block'); // Mostrar todos los iconos de reproducir
+        pauseIcons.forEach(icon => icon.style.display = 'none'); // Ocultar todos los iconos de pausar
+    }
+}
 
