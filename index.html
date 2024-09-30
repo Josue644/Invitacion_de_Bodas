@@ -515,7 +515,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center">
-                        <form action="https://formsubmit.co/d3f027b584f51a04ce6f403d2ec593e3" method="POST">
+                        <form id="rsvpForm" action="https://formsubmit.co/d3f027b584f51a04ce6f403d2ec593e3" method="POST" onsubmit="showLoader()">
                             <div class="form-row">
                                 <div class="form-group col-sm-6">
                                     <input type="text" name="Nombre" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Su Nombre"/>
@@ -560,7 +560,13 @@
                                 <input type="hidden" name="_captcha" value="false">
                             </div>                       
                         </form>
+                        <div id="loader" style="display: none;">Cargando...</div>
                     </div>
+                        <script>
+                                function showLoader() {
+                                    document.getElementById('loader').style.display = 'block';
+                                }
+                        </script>
                 </div>
             </div>
         </div>
