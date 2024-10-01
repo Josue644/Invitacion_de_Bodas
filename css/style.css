@@ -9781,3 +9781,61 @@ a.text-dark:hover, a.text-dark:focus {
     border-right: none !important;
   }
 }
+
+
+.custom-img {
+  width: 100%; /* Reduce el ancho al 80% para que no sean tan anchas */
+  height: 450px; /* Ajusta la altura deseada */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+  margin: 0 auto; /* Centra la imagen en su contenedor */
+}
+
+.row {
+  display: flex;
+  align-items: stretch; /* Asegura que las columnas tengan la misma altura */
+}
+
+.bg-secondary {
+  width: 100%; /* Mantén el fondo al 100% */
+  padding: 20px; /* Ajusta el padding según necesites */
+}
+
+.icono-container {
+  display: flex; /* Usa flexbox para alinear en fila */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  margin: 20px; /* Añade margen para separar del contenido adyacente */
+}
+
+.icono {
+  width: 50px; /* Tamaño fijo para la imagen */
+  height: 50px; /* Mantiene proporción cuadrada */
+  margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.icono-container h3 {
+  color: black; /* Cambia el color según necesites */
+  margin: 0; /* Elimina el margen del texto */
+  font-size: 1.2rem; /* Tamaño de texto más grande */
+}
+
+/* Media Query para ajustar en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .icono {
+      width: 40px; /* Ajusta el tamaño de la imagen en dispositivos móviles */
+      height: 40px; /* Mantiene proporción cuadrada */
+  }
+
+  .icono-container h3 {
+      font-size: 1.5rem; /* Ajusta el tamaño de texto en móviles */
+  }
+}
+
+/* Media Query para pantallas más grandes */
+@media (min-width: 769px) {
+  .icono-container h3 {
+      font-size: 1.5rem; /* Aumenta el tamaño del texto en pantallas más grandes */
+  }
+}
+
+
