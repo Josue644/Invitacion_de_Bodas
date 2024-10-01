@@ -9841,8 +9841,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 
 .same-size {
-  width: 400px; /* Ajusta el ancho a un valor específico */
-  height: 400px; /* Mantiene la altura constante para ambas */
-  object-fit: cover; /* Cubre el área y recorta si es necesario */
+  width: 100%; /* Ajusta al ancho completo del contenedor */
+  height: 320px; /* Mantén una altura constante */
+  object-fit: contain; /* Asegura que la imagen se muestre completa */
 }
 
